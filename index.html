@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
+</head>
+<body onload="init()">
+    <div>
+        <div class="new-game-btn-wrapper">
+            <button id="newGame" onclick="startNewGame()">Start new game</button>
+        </div>
+        <div class="round-wrapper">
+            <b class="round-title">Round: </b><span id="round">0</span>
+        </div>
+    </div>
+    <div class="split left">
+        <div class="centered">
+            <h1 id="score-player1"></h1>
+            <h2>Player 1</h2>
+            <span><input id="draw-btn1" type="button" value="Draw" onclick="draw(1)"/></span>
+            <span><input id="stay-btn1" type="button" value="Stay" onclick="stay(1)"/></span>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <h1 id="score-player2"></h1>
+            <h2>Player 2</h2>
+            <span><input id="draw-btn2" type="button" value="Draw" onclick="draw(2) " disabled/></span>
+            <span><input id="stay-btn2" type="button" value="Stay" onclick="stay(2)" disabled/></span>
+        </div>
+    </div>
+</body>
+</html>

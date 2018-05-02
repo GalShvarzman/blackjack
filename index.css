@@ -1,0 +1,75 @@
+body, button, input[type=button] {
+    font-family: 'Ubuntu Mono';
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
+input[type=button]{
+   color: darkslateblue;
+    background: white;
+    border: 2px solid gray;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+input[type="button"]:disabled {
+    background: #dfdfdf;
+}
+
+.round-wrapper{
+    float: left;
+}
+
+.new-game-btn-wrapper{
+    float: right;
+}
+
+button#newGame{
+    border: 3px solid darkslateblue;
+    padding: 6px 12px;
+    color: cadetblue;
+    font-size: 20px;
+    background-color: white;
+}
+
+.round-title{
+    color: darkslateblue;
+    font-size: 30px;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 38px;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: lightskyblue;
+}
+
+.right {
+    right: 0;
+    background-color: lightblue;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#round{
+    text-align: center;
+    font-size: 30px;
+    color: darkslateblue;
+    top: 5px;
+}
